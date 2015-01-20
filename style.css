@@ -20,6 +20,7 @@ p {
 .card{
   background-color: white;
   padding:20px;
+  margin-bottom: 10px;
   text-align:center;
   box-shadow: 2px 2px 5px #A9AB9C;
 }
@@ -36,6 +37,7 @@ p {
 
 .card object {
   width: 100px;
+
 }
 
 #logo {
