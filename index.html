@@ -5,28 +5,187 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>--- TODO ---</title>
-
+    <title>ACSA78 - Garage indépendant Lotus, Caterham, Classiques</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- Leave those next 4 lines if you care about users using IE8 -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
   </head>
   <body>
+   <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">ACSA78</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-left">
+            <li><a href="#ancre-helper">Prestations</a></li>
+            <li><a href="#infos-utiles">Contact</a></li>
+            <li><a href="#historique">Historique</a></li>
+            <li></li>
+            <li><a href="http://www.facebook.com/acsa78" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-phone-square"></i>  <strong>06 01 71 21 49</strong></a></li>
+            <li><a href="#ancre-helper">Horaires: 9h-18h30 en semaine et 9h-12h le samedi</a></li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div id="banner">
+      <br><br><br><br><br>
+      <img src="images/logoACSA78carre.png" alt="ACSA78" id="logo">
+      <br><br>
+      <h3>Garage indépendant spécialiste Lotus, Caterham, et classiques</h3>
+      <div class="fb-like" data-href="http://www.facebook.com/acsa78" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+    </div>
+
+    <div id="prestations" class="padded">
+      <div id='ancre-helper'></div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                <object data="images/entretien.svg" type="image/svg+xml"></object>
+                <h2>Entretien et Réparation</h2>
+                <p>Du service rapide comme les vidanges, à des intervention plus lourdes et techniques (embrayage, distribution, joint de culasse, etc..) nous avons le savoir faire et le matériel adapté à vos besoins.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                <object data="images/restauration.svg" type="image/svg+xml"></object>
+                <h2>Restauration</h2>
+                <p>Du service rapide comme les vidanges, à des intervention plus lourdes et techniques (embrayage, distribution, joint de culasse,etc..) nous avons le savoir faire et le matériel adapté à vos besoins.</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                <object data="images/shock.svg" type="image/svg+xml"></object>
+                <h2>Préparation</h2>
+                <p>Du service rapide comme les vidanges, à des intervention plus lourdes et techniques (embrayage, distribution, joint de culasse,etc..) nous avons le savoir faire et le matériel adapté à vos besoins.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+
+              <div id="map" style="width: 100%; height: 400px;"></div>
+
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+                <script type="text/javascript">
+                var myLatlng = new google.maps.LatLng(49.011245, 2.084529);
+                var myOptions = {
+                  zoom: 16,
+                  center: myLatlng,
+                  scrollwheel: false,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP,
+                  styles: []
+                };
+                var map = new google.maps.Map(document.getElementById('map'), myOptions);
+                var marker = new google.maps.Marker({
+                  position: myLatlng,
+                  map: map,
+                  title:"You are here!"
+                });
+                </script>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div class="text-center padded" id="contact">
+                <h2>Besoin de plus d'informations?</h2>
+                <p>Appelez nous ou envoyez nous un email</p>
+                <br>
+                <p><i class="fa fa-phone-square"></i><strong> 06 01 71 21 49</strong></p>
+                <br><br>
+                <!--<form class="form-horizontal">
+                  <input type="email" placeholder="jean@gmail.com" class="form-control">
+                  <input type="text" placeholder="votre texte ici" class="form-control">
+                  <input type="submit" value="Envoyer" class="btn btn-primary">
+                </form>-->
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="jean@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputText3" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputText3" placeholder="votre message ici">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                  </div>
+                </form>
+                <p>Horaires: 9h-18h30 en semaine et 9h-12h le samedi</p>
+                <p><i class="fa fa-map-marker"></i> 29 rue des Cayennes, 78700 Conflans Sainte Honorine</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    <div id="historique" class="padded">
+      <div class="content">
+        <h2>Historique</h2>
+        <p>Plus connu sous le nom de R2Rien, Je suis <strong>Olivier MATURI</strong>.</p>
+        <p>La passion de le restauration
+        automobile a commencé jeune, bien avant l'âge de conduire une voiture, je m'attaquais à la restauration de ma première voiture.
+        Et puis une rencontre inespérée en 1993, m'a permis d'intégrer une équipe de passionnés qui participe aux <strong>24 heures du Mans, l'écurie WR (Welter Racing)</strong>. Une expérience de 4 ans très enrichissante aussi bien sur le point humain, technique et intellectuel.<br>
+        En 2000 j'achète ma première Caterham et avec elle, une nouvelle aventure et un nouvel apprentissage commencent. Celui notamment du moteur K Rover et de la boite Type 9. Puis la spirale continue avec, Lotus et les Elise S1, Exige S1 puis 340R puis une autre Exige etc...
+        Toutes ces raisons m'ont motivées à donner le jour a ACSA78 (Atelier Classique Auto Sport 78 qui se situe dans le nord ouest parisien à Conflans Saint Honorine).
+        </p>
+      </div>
+
+    </div>
+
+    <div id="footer">
+      <p>© 2015 ACSA78 · 29 rue des Cayennes, 78700 Conflans Sainte Honorine</p>
+    </div>
 
 
 
-    <!-- TODO: Here goes your content! -->
 
 
-
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
   </body>
 </html>

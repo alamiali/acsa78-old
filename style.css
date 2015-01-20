@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open sans';
+  font-size:16px;
+  font-weight:300;
+  color:#6B6F5E;
+}
+
+h1, h2, h3 {
+  font-family: Montserrat;
+}
+
+#banner h3 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+  margin:0;
+}
+
+.card{
+  background-color: white;
+  padding:20px;
+  text-align:center;
+  box-shadow: 2px 2px 5px #A9AB9C;
+}
+
+.padded {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.content {
+  width:70%;
+  margin: 0 auto;
+}
+
+.card object {
+  width: 100px;
+}
+
+#logo {
+  width:100px;
+  box-shadow: 1px 1px 12px #FFFFFF;
+}
+
+#banner {
+  padding-top: 50px;
+  background-image: url("images/3ExigeS1effet.jpg");
+  background-size:cover;
+  color:white;
+  height: 400px;
+  text-align: center;
+}
+
+#prestations {
+  background-color: rgb(240,240,240);
+
+}
+
+#footer {
+  background-color: #3F3F3F;
+  color:white;
+  text-align: center;
+}
+
+#contact {
+
+}
+
+#historique {
+  background-image: url("images/EquipeWR.jpg");
+  color:white;
+  font-weight: 400;
+  background-size:cover;
+}
+
+#infos-utiles {
+
+}
+
+#ancre-helper {
+  position: relative;
+  bottom:50px;
+}
