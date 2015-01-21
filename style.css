@@ -13,8 +13,22 @@ h1, h2, h3 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#banner h2 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 p {
   margin:0;
+}
+
+@media (max-width: 770px) {
+  h3 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
 }
 
 .card{
